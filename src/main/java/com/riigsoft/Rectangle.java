@@ -1,15 +1,19 @@
 package com.riigsoft;
 
-/** Creating Rectangle class
- *  two protect variables
- *  one public method area
- * **/
-public class Rectangle {
-    protected  int w;
-    protected int h;
+public  class Rectangle extends  Shape{
 
-    public void area(){
-        System.out.println("Rec area: " + w * h);
+    private  double width;
+    private double height;
+
+
+    public Rectangle(double width,double height){
+        this.width= width;
+        this.height = height;
+
+    }
+
+    @Override
+    public  double area (){
+        return this.height *this.width;
     }
 }
-
